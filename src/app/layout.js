@@ -1,7 +1,13 @@
+'use client'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
+import { AnimatePresence } from 'framer-motion'
+import { useRouter } from 'next/navigation'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+
+const montserrat = Montserrat({ subsets: ['latin'], variable: "--font-mont" })
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,9 +15,12 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const router = useRouter();
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <AnimatePresence mode="wait">
+    <html lang="es" className='`${montserrat.variable}`'>
+      <body className={montserrat.className}><Header />{children}<Footer /></body>
     </html>
+    </AnimatePresence>
   )
 }
