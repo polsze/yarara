@@ -1,4 +1,4 @@
-
+"use client"
 import React from 'react'
 import TransitionEffect from '../components/TransitionEffect'
 import Head from 'next/head'
