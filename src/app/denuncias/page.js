@@ -50,7 +50,7 @@ const page = () => {
             </div>
         <div className='flex flex-row items-center justify-evenly flex-wrap mt-12'>
           <div>
-            <Image src={Ecologia} />
+            <Image src={Ecologia} alt="imagen" />
             <Link href="https://api.whatsapp.com/send?phone=543765252582" target={"_blank"} className='text-white mr-4 mt-2 mb-4 p-2.5 text-center flex items-center w-40 bg-green-700 text-light
               rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark sm:ml-0 sm:mt-2 md:p-2 md:px-4 md:text-base'
                 >
@@ -58,7 +58,7 @@ const page = () => {
                 </Link>
           </div>
           <div>
-          <Image src={Bomberos} />
+          <Image src={Bomberos} alt="imagen" />
           <Link href="https://api.whatsapp.com/send?phone=543765252582" target={"_blank"} className='text-white mt-2  mb-4  text-center mr-4 p-2.5 flex items-center w-40 bg-green-700 text-light
               rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark sm:ml-0 sm:mt-2 md:p-2 md:px-4 md:text-base'
                 >
@@ -66,7 +66,7 @@ const page = () => {
                 </Link>
           </div>
           <div>
-          <Image src={Policia} />
+          <Image src={Policia} alt="imagen"  />
           <Link href="https://api.whatsapp.com/send?phone=543765252582" target={"_blank"} className='text-white mt-2  text-center mr-4 p-2.5 flex items-center w-40 bg-green-700 text-light
               rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark sm:ml-0 sm:mt-2 md:p-2 md:px-4 md:text-base'
                 >
