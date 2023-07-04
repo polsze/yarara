@@ -16,7 +16,7 @@ const page = () => {
   return (
     <>
      <Head>
-        <title>Yarará en Acción | Rescates</title>
+        <title>Yarará en Acción | Denuncias</title>
         <meta name='description' content='Rescate y liberación de animales silvestres en zonas urbanas de Posadas'></meta>
       </Head>
       <Layout1 className='pt-4'>
