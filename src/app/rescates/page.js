@@ -6,6 +6,7 @@ import Rescate from '../../../public/images/amado-mulitas.jpg'
 import Image from 'next/image';
 import Layout1 from '../components/Layout1';
 import Head from 'next/head';
+import TransitionEffect from '../components/TransitionEffect';
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -36,6 +37,7 @@ const page = () => {
         <title>Yarará en Acción | Rescates</title>
         <meta name='description' content='Rescate y liberación de animales silvestres en zonas urbanas de Posadas'></meta>
       </Head>
+      <TransitionEffect />
       <Layout1 className='pt-16'>
         <div> <AnimatedText text='¡Del rescate a la libertad!' className='py-12 xs:py-2 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
         </div>
