@@ -15,7 +15,7 @@ import Expo8 from '../../../public/images/coral.jpg'
 import Image from 'next/image'
 import { motion, useScroll } from "framer-motion"
 
-const page = () => {
+const Page = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll(
     {
@@ -184,4 +184,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -33,7 +33,7 @@ const AnimatedNumbers = ({ value }) => {
   return <span ref={ref}></span>
 }
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Head>
@@ -95,4 +95,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

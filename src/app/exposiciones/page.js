@@ -10,7 +10,7 @@ import Expo2 from '../../../public/images/yarara-conference.jpg'
 import Expo3 from '../../../public/images/amado-conference2.jpg'
 
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Head>
@@ -73,4 +73,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

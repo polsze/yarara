@@ -12,7 +12,7 @@ import Link from 'next/link'
 import Amado from '../../../public/images/amado-ave1.jpg'
 
 
-const page = () => {
+const Page = () => {
   return (
     <>
      <Head>
@@ -79,4 +79,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

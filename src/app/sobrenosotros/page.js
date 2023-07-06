@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Head>
@@ -59,4 +59,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
