@@ -21,11 +21,11 @@ const page = () => {
         <div className="fixed inset-0 z-0 pointer-events-none">
           
         </div>
-        <Layout1 className='pt-16'>
-          <AnimatedText text='Conocé a Yarará en Acción' className='py-12 xs:py-2 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
+        <Layout1 className='pt-16 sm:pt-0'>
+          <AnimatedText text='Conocé a Yarará en Acción' className='pb-12 xs:py-2 lg:!text-7xl sm:!text-6xl xs:!text-4xl' />
           <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 '>
             <div className='col-span-4 flex flex-col item justify-start xl:col-span-4 md:order-2 md:col-span-8'>
-              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 '>Nosotros</h2>
+              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 sm:mb-0'>Nosotros</h2>
               <p className='my-4 font-medium'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
@@ -46,7 +46,7 @@ const page = () => {
             </div>
 
             <div className='col-span-4 relative h-max rounded-2xl 
-            bg-light p-8 xl:col-span-4 md:order-1 md:col-span-8'>
+            bg-light p-8 xl:col-span-4 md:order-1 md:col-span-8 sm:p-2'>
              
               <Image src={Bg} alt="Pablo Barrios, Pablo Barrios Developer" className='w-50 h-auto rounded-2xl' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
             </div>

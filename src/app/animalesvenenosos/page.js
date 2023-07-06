@@ -1,6 +1,6 @@
 'use client'
 import Head from 'next/head'
-import React from 'react'
+import React, { useRef } from 'react'
 import TransitionEffect from '../components/TransitionEffect'
 import Layout1 from '../components/Layout1'
 import AnimatedText from '../components/AnimatedText'
@@ -13,8 +13,18 @@ import Expo6 from '../../../public/images/coral-falsa.png'
 import Expo7 from '../../../public/images/cascabel.jpg'
 import Expo8 from '../../../public/images/coral.jpg'
 import Image from 'next/image'
+import { motion, useScroll } from "framer-motion"
 
 const page = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll(
+    {
+      target: ref,
+      offset: ["start end", "center start"]
+    }
+  )
+
+
   return (
     <>
       <Head>
@@ -23,10 +33,12 @@ const page = () => {
         <meta name='description' content='Rescate y liberación de animales silvestres en zonas urbanas de Posadas'></meta>
       </Head>
       <TransitionEffect />
-      <Layout1 className='pt-4'>
+      <Layout1 className='pt-4 sm:pt-0'>
         <AnimatedText text='Conocé las especies autóctonas más peligrosas para prevenir' className='py-12 xs:py-2 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
         <div className='flex flex-row flex-wrap gap-16 justify-center items-center'>
-          <div className="max-w-sm rounded overflow-hidden shadow-xl">
+          <motion.div className="max-w-sm rounded overflow-hidden shadow-xl" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
             <Image className="w-full" src={Expo1} alt="Exposiciones de yarara en accion" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Oruga Taturana</div>
@@ -40,8 +52,10 @@ const page = () => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
 
-          </div>
-          <div className="max-w-sm rounded overflow-hidden shadow-xl">
+          </motion.div>
+          <motion.div className="max-w-sm rounded overflow-hidden shadow-xl" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
             <Image className="w-full" src={Expo2} alt="Exposiciones de yarara en accion" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Araña del Banano</div>
@@ -55,8 +69,10 @@ const page = () => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
 
-          </div>
-          <div className="max-w-sm rounded overflow-hidden shadow-xl">
+          </motion.div>
+          <motion.div className="max-w-sm rounded overflow-hidden shadow-xl" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
             <Image className="w-full" src={Expo3} alt="Exposiciones de yarara en accion" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Araña del Rincon</div>
@@ -70,8 +86,10 @@ const page = () => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
 
-          </div>
-          <div className="max-w-sm rounded overflow-hidden shadow-xl">
+          </motion.div>
+          <motion.div className="max-w-sm rounded overflow-hidden shadow-xl" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
             <Image className="w-full" src={Expo4} alt="Exposiciones de yarara en accion" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Alacrán</div>
@@ -85,8 +103,10 @@ const page = () => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
 
-          </div>
-          <div className="max-w-sm rounded overflow-hidden shadow-xl">
+          </motion.div>
+          <motion.div className="max-w-sm rounded overflow-hidden shadow-xl" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
             <Image className="w-full" src={Expo5} alt="Exposiciones de yarara en accion" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Yarará</div>
@@ -99,9 +119,11 @@ const page = () => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="max-w-sm rounded overflow-hidden shadow-xl">
+          <motion.div className="max-w-sm rounded overflow-hidden shadow-xl" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
             <Image className="w-full" src={Expo8} alt="Exposiciones de yarara en accion" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Coral</div>
@@ -115,9 +137,11 @@ const page = () => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
 
-          </div>
+          </motion.div>
 
-          <div className="max-w-sm rounded overflow-hidden shadow-xl">
+          <motion.div className="max-w-sm rounded overflow-hidden shadow-xl" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
             <Image className="w-full" src={Expo7} alt="Exposiciones de yarara en accion" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Cascabel</div>
@@ -131,9 +155,11 @@ const page = () => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
 
-          </div>
+          </motion.div>
 
-          <div className="max-w-sm rounded overflow-hidden shadow-xl">
+          <motion.div className="max-w-sm rounded overflow-hidden shadow-xl" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
             <Image className="w-full" src={Expo6} alt="Exposiciones de yarara en accion" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Falsa Coral (NO VENENOSA)</div>
@@ -147,7 +173,7 @@ const page = () => {
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
 
-          </div>
+          </motion.div>
         </div>
 
 

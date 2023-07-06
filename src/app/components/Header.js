@@ -53,7 +53,7 @@ const Header = () => {
 
   return (
 
-    <header className="w-full font-medium  lg:px-16 md:px-12 sm:px-8" >
+    <header className="w-full font-medium  lg:px-16 md:px-12 sm:px-8 " >
       <button className='flex-col justify-center hidden items-center lg:flex mt-5' onClick={handleClick}>
         <span className={`bg-green-500  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
         <span className={`bg-green-500  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
@@ -78,7 +78,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="absolute left-[50%] top-48 translate-x-[-70%] sm:relative sm:top-0 sm:translate-x-[-50%]">
+      <div className="absolute left-[50%] top-48 translate-x-[-70%] sm:relative sm:top-6 sm:translate-x-[-45%]">
         <Logo />
       </div>
 

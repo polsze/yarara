@@ -41,15 +41,15 @@ const page = () => {
         <meta name='description' content='Rescate y liberación de animales silvestres en zonas urbanas de Posadas'></meta>
       </Head>
       <TransitionEffect />
-      <Layout1 className='pt-16'>
-        <div> <AnimatedText text='¡Del rescate a la libertad!' className='py-12 xs:py-2 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
+      <Layout1 className='pt-16 sm:pt-0'>
+        <div> <AnimatedText text='¡Del rescate a la libertad!' className='pb-12 xs:py-2 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
         </div>
         <div className='col-span-3 relative h-max  
-                  p-8 xl:col-span-4 md:order-1 md:col-span-8'>
+                  p-8 xl:col-span-4 md:order-1 md:col-span-8 sm:p-2'>
           <div className='col-span-2 flex flex-row items-center justify-center xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
             <div className='flex flex-col justify-center items-center xl:items-center'>
               <span className='inline-block text-7xl text-green-600 font-bold md:text-6xl sm:text-5xl xs:text-4x'><AnimatedNumbers value={160} />+</span>
-              <h2 className='font-bold mt-2 text-6xl mb-4  xl:text-center md:text-lg sm:text-base xs:text-sm'>Rescates y liberaciones</h2>
+              <h2 className='font-bold mt-2 text-6xl mb-4 sm:text-3xl xl:text-center md:text-lg'>Rescates y liberaciones</h2>
               <div className=''><Image src={Rescate} className=' rounded-2xl' alt="image" /> </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ const page = () => {
               <Image src={Libertad} alt="Rescate de animales en Posadas, Misiones, Argentina" className='w-24'/>
               
               </div> 
-              <h1 className='text-center font-bold m text-4xl'>Libertad</h1>
+              <h1 className='text-center font-bold my-4 text-4xl'>Libertad</h1>
               <div className='text-justify'>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.

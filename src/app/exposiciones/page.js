@@ -18,7 +18,7 @@ const page = () => {
         <meta name='description' content='Rescate y liberación de animales silvestres en zonas urbanas de Posadas'></meta>
       </Head>
     <TransitionEffect />
-    <Layout1 className='pt-4'>
+    <Layout1 className='pt-4 sm:pt-0'>
     <AnimatedText text='Exponemos y enseñamos nuestros conocimientos' className='py-12 xs:py-2 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
     <div className='flex flex-row flex-wrap gap-16 justify-center items-center'>
     <div className="max-w-sm rounded overflow-hidden shadow-xl">
