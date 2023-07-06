@@ -22,7 +22,7 @@ const ref = useRef(null);
       target: ref,
       offset: ["start end", "center start"]
     }
-  )
+  );
 
 const Page = () => {
   
