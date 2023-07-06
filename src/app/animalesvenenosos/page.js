@@ -16,17 +16,17 @@ import Image from 'next/image'
 import { motion, useScroll } from "framer-motion"
 
 
-const ref = useRef(null);
+
+
+const Page = () => {
+  
+  const ref = useRef(null);
   const { scrollYProgress } = useScroll(
     {
       target: ref,
       offset: ["start end", "center start"]
     }
   );
-
-const Page = () => {
-  
-
 
   return (
     <>
